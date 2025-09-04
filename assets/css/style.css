@@ -94,6 +94,10 @@ Criando estilo da modal login e cadastro
   gap: 1rem;
 }
 
+.input {
+  padding: 0 1rem;
+}
+
 .input input {
   outline: none;
   border: none;
