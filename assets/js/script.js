@@ -8,6 +8,14 @@ const btnLoginOpen = document.querySelector("#btn-login-open");
 const inputEmail = document.querySelector("#email");
 const resultado = document.querySelector("#resultado");
 
+const pegar_valor = (valor) => {
+  resultado.innerHTML = `
+      <div class="valor">
+       <h1>${valor}</h1>
+      </div>
+  `;
+};
+
 function soma(num01, num02) {
   const somar = num01 + num02;
   console.log(somar);
@@ -39,6 +47,9 @@ btnCancelLogin.addEventListener("click", (e) => {
   e.preventDefault();
   modalLogin.classList.remove("show-modal");
   modalLogin.classList.add("hide-modal");
+  inputEmail.value = "";
+  resultado.innerHTML = "";
+  inputEmail.style.borderBottom = "0.5rem solid rgb(12, 153, 196)";
 });
 
 btnCancelRegister.addEventListener("click", (e) => {
@@ -58,5 +69,9 @@ inputEmail.addEventListener("focus", () => {
 btnLoginOpen.addEventListener("click", (e) => {
   e.preventDefault();
   const email = inputEmail.value;
-  resultado.innerHTML = `<h1>${email}</h1>`;
+  pegar_valor(email);
+});
+
+inputEmail.addEventListener("focusout", () => {
+  inputEmail.style.borderBottom = "0.5rem solid rgb(12, 153, 196)";
 });
