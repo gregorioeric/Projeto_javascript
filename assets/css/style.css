@@ -6,6 +6,9 @@
 
 body {
   background: rgb(12, 153, 196);
+  /* background: rgb(red, green, blue);
+  background: hsl(hue, saturation, lightness);
+  background: hsl(162, 100%, 50%); */
 }
 
 .container {
@@ -113,4 +116,32 @@ Criando estilo da modal login e cadastro
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
+}
+
+.error_msg {
+  padding: 1rem;
+  background: rgb(255, 0, 0);
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  /* padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0; */
+}
+
+.success_msg {
+  padding: 1rem;
+  background: rgb(0, 199, 33);
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  /* padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0; */
 }
