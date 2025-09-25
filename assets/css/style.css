@@ -6,9 +6,6 @@
 
 body {
   background: rgb(12, 153, 196);
-  /* background: rgb(red, green, blue);
-  background: hsl(hue, saturation, lightness);
-  background: hsl(162, 100%, 50%); */
 }
 
 .container {
@@ -26,27 +23,21 @@ button {
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
-  background: rgb(156, 96, 23);
+  background: rgb(255, 255, 255);
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: rgb(42, 105, 116);
+  border: 0.3rem solid rgb(42, 105, 116);
   transition: all 350ms ease-in-out;
 }
 
 button:hover {
-  background: rgb(247, 151, 33);
-  color: rgb(0, 0, 0);
+  background: rgb(42, 105, 116);
+  color: rgb(255, 255, 255);
 }
 
 /* **************************************
 Criando estilo da modal login e cadastro
 ***************************************** */
-
-.content-modal-login,
-.content-modal-register {
-  background: rgb(255, 255, 255);
-  padding: 2rem;
-  border-radius: 0.5rem;
-}
 
 .hide-modal {
   opacity: 0;
@@ -68,10 +59,16 @@ Criando estilo da modal login e cadastro
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.702);
+  background: rgba(0, 0, 0, 0.733);
   transition: all 350ms ease-in-out;
 }
 
+.content-modal-login,
+.content-modal-register {
+  background: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 2.5rem;
+}
 /* *****************************************
     Estilo dos botões
 ******************************************** */
@@ -118,13 +115,13 @@ Criando estilo da modal login e cadastro
   font-weight: bold;
 }
 
-.error_msg {
+.error_msg,
+.success_msg {
   padding: 1rem;
-  background: rgb(255, 0, 0);
   font-size: 2rem;
   color: rgb(255, 255, 255);
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   margin: 1rem 0;
   /* padding-top: 0;
   padding-right: 0;
@@ -132,16 +129,10 @@ Criando estilo da modal login e cadastro
   padding-left: 0; */
 }
 
+.error_msg {
+  background: rgb(255, 0, 0);
+}
+
 .success_msg {
-  padding: 1rem;
   background: rgb(0, 199, 33);
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  border-radius: 0.5rem;
-  margin: 1rem 0;
-  /* padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0; */
 }

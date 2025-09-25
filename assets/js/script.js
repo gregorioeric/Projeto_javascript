@@ -8,6 +8,7 @@ const btnLoginOpen = document.querySelector("#btn-login-open");
 const inputEmail = document.querySelector("#email");
 const inputSenha = document.querySelector("#senha");
 const resultado = document.querySelector("#resultado");
+console.log(btnLogin);
 
 const pegar_valor = (valor) => {
   resultado.innerHTML = `
@@ -97,6 +98,8 @@ btnLoginOpen.addEventListener("click", (e) => {
   e.preventDefault();
   const email = inputEmail.value;
   const senha = inputSenha.value;
+  const valorFruta = 0.3;
+  console.log(valorFruta);
 
   if (!email || !senha) {
     const error_fields = `
